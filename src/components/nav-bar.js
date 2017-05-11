@@ -11,6 +11,7 @@ export default class NavBar extends Component {
     <ul>
     <li><Link to="/">Home</Link></li>
     <li><Link to="/details">Detials</Link></li>
+    <li><Link to="/payments">Payments</Link></li>
     </ul>
     </div>
   );

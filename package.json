@@ -26,6 +26,8 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "ag-grid": "^9.1.0",
+    "ag-grid-react": "^9.1.0",
     "babel-preset-stage-1": "^6.1.18",
     "lodash": "^3.10.1",
     "react": "^0.14.3",

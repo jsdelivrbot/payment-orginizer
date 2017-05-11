@@ -1,0 +1,35 @@
+[
+  {
+    month: 'January',
+    plants: [
+      {
+        name: 'Wasobia',
+        prune: {
+          notes: 'prune notes here',
+          pic: 'http://pic.jpg'
+        },
+        fertilise: {
+          notes: 'fertilise notes here',
+          pic: 'http://pic.jpg'
+        }
+      }, {
+        name: 'foo',
+        prune: {
+          notes: 'prune notes here',
+          pic: 'http://pic.jpg'
+        }
+      }
+    ]
+  }, {
+    month: 'February',
+    plants: [
+      {
+        name: 'grass',
+        removeMoss: {
+          notes: 'Remove moss in area',
+          pic: 'http://pic.jpg'
+        }
+      }
+    ]
+  }
+]
