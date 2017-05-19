@@ -6,11 +6,32 @@
         "name": "Wasobia",
         "prune": {
           "notes": "prune notes here",
-          "pic": "http://pic.jpg"
+          "pic": "http://pic.jpg",
+          "actual": [
+            {
+              "date": "10/2017",
+              "notes": "Pruned front. Before: <pic.jpg> </br> After: <picAfter.jpg>"
+            }, {
+              "date": "8/2016",
+              "notes": "Pruned front and top. Before: <pic.jpg> </br> After: <picAfter.jpg>"
+            }
+          ]
+        },
+        "flowers": {
+          "expectedFrom": "April",
+          "expectedTo": "June",
+          "actualFrom": "April",
+          "actualTo": "May"
         },
         "fertilise": {
           "notes": "fertilise notes here",
-          "pic": "http://pic.jpg"
+          "pic": "http://pic.jpg",
+          "actual": [
+            {
+              "date": "10/2015",
+              "notes": "Fertilised with blah <link /imgs/sample.jpg>"
+            }
+          ]
         }
       }, {
         "name": "foo",

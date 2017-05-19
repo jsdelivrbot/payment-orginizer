@@ -1,0 +1,40 @@
+[
+  {
+    "country": "UK",
+    "city": "Kingston",
+    "county": "Surrey",
+    "post": "KT1",
+    "address": "123 Main st",
+    "phone": "",
+    "movedIn": "11/2016",
+    "movedOut": "",
+    "price": "670,000",
+    "monthly": [
+      {
+        "2016": "2000"
+      }
+    ]
+  },
+  {
+    "country": "UK",
+    "city": "London",
+    "county": "London",
+    "post": "SE1 1AB",
+    "address": "1 Buckingham Palace",
+    "phone": "",
+    "movedIn": "11/2014",
+    "movedOut": "",
+    "price": "1,660"
+  },
+  {
+    "country": "Italy",
+    "city": "Milan",
+    "county": "",
+    "post": "",
+    "address": "222 Will Ave",
+    "phone": "",
+    "movedIn": "",
+    "movedOut": "",
+    "price": ""
+  }
+]
