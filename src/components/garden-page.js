@@ -70,7 +70,6 @@ class GardenPage extends Component {
     );
 
   }
-
 };
 
 function mapDispatchToProps(dispatch) {
