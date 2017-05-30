@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { fetchGardenData } from '../actions/index';
+import { fetchGardenData } from '../actions/actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { AgGridReact } from 'ag-grid-react';
@@ -14,8 +14,8 @@ class GardenPage extends Component {
         api: {},
         columnApi: {},
         columnDefs: [
-          {headerName: 'Athlete', field: 'athlete', checkboxSelection: true, editable: true},
-            {headerName: 'Age', field: 'age', width: 90}
+          // {headerName: 'Athlete', field: 'athlete', checkboxSelection: true, editable: true},
+          {headerName: 'Month', field: 'month', width: 90}
         ],
         rowData: [
           {
@@ -47,7 +47,7 @@ class GardenPage extends Component {
 
     return (
       <div>
-        Garden Page here
+        Group with a plus sign?
         <button onClick={() => this.state.gridOptions.api.deselectAll()}> Clear </button>
         <div className="ag-fresh" id="myGrid" style={{"width": "1100px", "height": "300px"}}>
           <AgGridReact
@@ -55,7 +55,7 @@ class GardenPage extends Component {
               // column definitions and row data are immutable, the grid
               // will update when these lists change
               columnDefs={this.state.gridOptions.columnDefs}
-              rowData={this.state.gridOptions.rowData}
+              rowData={this.props.garden.garden}
               gridOptions={this.state.gridOptions}
 
               // or provide props the old way with no binding
@@ -76,9 +76,9 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchGardenData }, dispatch);
 }
 
-function mapStateToProps({data}) {
-  console.log("Garden Page got", data);
-  return {data};
+function mapStateToProps({garden}) {
+  console.log("Garden Page got", {garden});
+  return {garden};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(GardenPage)
